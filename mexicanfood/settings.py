@@ -30,9 +30,9 @@ SECRET_KEY = '25072009fbp'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-q0iaahhz36.us2.codeanyapp.com']
-ALLOWED_HOSTS = ['mexicanfoodfeeling.herokuapp.com', 'localhost']
-
+# ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-q0iaahhz36.us2.codeanyapp.com']
+ALLOWED_HOSTS = [
+    'mexicanfoodfeeling-575757b8aab9.herokuapp.com', 'localhost']
 
 
 # Application definition
