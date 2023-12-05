@@ -33,6 +33,7 @@ DEBUG = True
 # ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-q0iaahhz36.us2.codeanyapp.com']
 ALLOWED_HOSTS = [
     'mexicanfoodfeeling-575757b8aab9.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-q0iaahhz36.us2.codeanyapp.com']
 
 
 # Application definition
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'django_summernote',
     'blog',
 ]
 
@@ -132,8 +134,8 @@ STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+#MEDIA_URL = '/media/'
+#DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
