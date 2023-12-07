@@ -58,20 +58,18 @@
               <a
                 class="nav-link active"
                 aria-current="page"
-                href="{% url 'home' %}"
-                >Home</a
-              >
+                href="{% url 'home' %}">Home</a>
             </li>
             {% if user.is_authenticated %}
             <li class="nav-item">
-              <a class="nav-link" href="#">Logout</a>
+              <a class="nav-link" href="{% 'account_logout' %}">Logout</a>
             </li>
             {% else %}
             <li class="nav-item">
-              <a class="nav-link" href="#">Register</a>
+              <a class="nav-link" href="{% 'account_signup' %}">Sign Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="{% 'account_login' %}">Login</a>
             </li>
             {% endif %}
           </ul>
