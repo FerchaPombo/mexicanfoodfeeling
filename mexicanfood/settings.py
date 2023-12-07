@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
+    'crispy_forms',
     'blog',
 ]
 
@@ -153,3 +154,6 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': '1kpz9tatZXSquN8WxSWR1xU4Vno',
 
 }
+
+ALLOW_EMAIL_VERIFICATION = 'none'
+
