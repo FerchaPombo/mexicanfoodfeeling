@@ -37,7 +37,7 @@ ALLOWED_HOSTS = [
     'mexicanfoodfeeling-575757b8aab9.herokuapp.com', 'localhost']
 ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-q0iaahhz36.us2.codeanyapp.com']
 ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-z6d3fgfgh0.us2.codeanyapp.com']
-
+ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfood-7ysj6xga7f5.ws-eu106.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
