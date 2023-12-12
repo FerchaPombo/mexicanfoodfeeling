@@ -1,4 +1,5 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %}
+{% block content %}
 {% load crispy_forms_tags %}
 
 <div class="masthead">
@@ -84,7 +85,19 @@
     <div class="col-md-8 card mb-4 mt-3">
       <div class="card-body">
         <!-- For later -->
-        {% if commented %}
+        {% if user.is_autenticated %}
+
+        <h3>Tell us whet you think:</h3>
+        <p>Commenting as: {{ username.username }}</p>
+        <form method="post" style="margin-top: 1.3em;"></form>
+          {{ comment.form | crispy }}
+          {% csrf_token %}
+          <button type="sumbit" class="btn btn-signup btn-lg">Say it!</button>
+        </form>
+
+        {% endif %}
+        
+<!--        {% if commented %}
         <div class="alert alert-success" role="alert">
           ...Waiting for approval...
         </div>
@@ -99,7 +112,7 @@
         <button type="sumbit" class="btn btn-signup btn-lg">Say it!</button>
         </form>
         {% endif %}
-        {% endif %}
+        {% endif %}-->
       </div>
     </div>
   </div>
