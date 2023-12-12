@@ -35,9 +35,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'mexicanfoodfeeling-575757b8aab9.herokuapp.com', 'localhost']
-ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-q0iaahhz36.us2.codeanyapp.com']
-ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfoodf-z6d3fgfgh0.us2.codeanyapp.com']
-ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfood-7ysj6xga7f5.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['8000-ferchapombo-mexicanfood-fmj895yw5km.ws-eu106.gitpod.io']
 # Application definition
 
 INSTALLED_APPS = [
@@ -71,7 +69,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
+    # 'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'mexicanfood.urls'
