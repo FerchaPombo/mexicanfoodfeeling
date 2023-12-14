@@ -16,10 +16,10 @@
         {% if "placeholder" in post.featured_image.url %}
         <img
           src="https://static.vecteezy.com/system/resources/previews/000/083/349/non_2x/free-seamless-vector-taco-pattern.jpg"
-          width="100%"
-        />
+          width="100%">
+
         {% else %}
-        <img src="{{ post.featured_image.url }}" width="100%" />
+        <img src="{{ post.featured_image.url }}" width="100%">
         {% endif %}
       </div>
     </div>
@@ -51,7 +51,7 @@
                 {% endif %}
               </form>
               {% else %}
-              
+
               <span class="text-secondary"><i class="far fa-heart"></i></span>
               {% endif %}
               <span class="text-secondary"> {{ post.number_of_likes }}</span>
